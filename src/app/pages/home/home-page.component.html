@@ -1,0 +1,47 @@
+<!-- Home page header -->
+<app-home-header title="Noah Gibson"
+                 subtitle="Software Developer"></app-home-header>
+
+<!-- About section -->
+<app-section-header title="About" id="about"></app-section-header>
+<app-section id="about-section">
+
+  <div id="about-row-1">
+    <img src="assets/images/noah-gibson.jpg" id="about-photo">
+    <div id="about-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at facilisis nunc, non scelerisque nisi. Aliquam fermentum id nulla in cursus. Etiam venenatis orci felis, nec egestas urna semper ut. Praesent commodo sem et turpis elementum, nec venenatis orci scelerisque. Praesent lacus ligula, vehicula eget nulla non, porta fringilla ante. In condimentum lectus et lectus porttitor luctus. Quisque ultricies ipsum augue, sit amet molestie ante dictum ut. Vestibulum sed tortor sem. Proin libero enim, faucibus sit amet efficitur ut, dictum at velit. Aenean hendrerit lectus in fringilla lacinia. Pellentesque congue mi ac interdum fermentum. Etiam augue eros, consectetur vitae tellus vel, eleifend cursus arcu. Donec feugiat nunc magna, vitae aliquam lectus hendrerit vel. Vivamus lorem turpis, pulvinar sed nisl a, dignissim varius dolor.</p>
+      <p>Suspendisse potenti. In rutrum gravida lorem, a gravida orci fringilla quis. In feugiat ultricies erat et malesuada. Quisque cursus mattis est, sit amet luctus augue condimentum porta. Cras accumsan purus sem, ac pellentesque est venenatis non. Ut iaculis fringilla dolor, quis tempor justo. Morbi porta tellus in nisi ultrices luctus. Suspendisse potenti. Aliquam id vulputate ex. Duis vulputate nibh sit amet enim elementum posuere. In dignissim lacinia arcu, ac semper felis consectetur at.</p>
+    </div>
+  </div>
+
+  <div id="about-row-2">
+    <horizontal-timeline [timelineElements]="timeline" [showContent]="true"></horizontal-timeline>
+  </div>
+
+  <div id="about-row-3">
+    <app-image-display img="assets/images/cott-systems.jpg"
+                       [grayscale]="true"
+                       title="Cott Systems, Inc."
+                       caption="This is Cott Systems, Inc."
+                       id="cott-photo"></app-image-display>
+    <app-image-display img="assets/images/battelle.jpg"
+                       [grayscale]="true"
+                       title="Battelle Memorial Institute"
+                       caption="This is Battelle Memorial Institute"
+                       id="battelle-photo"></app-image-display>
+    <app-image-display img="assets/images/chase.jpg"
+                       [grayscale]="true"
+                       title="JPMorgan Chase & Co."
+                       caption="This is JPMorgan Chase & Co."
+                       id="chase-photo"></app-image-display>
+  </div>
+
+</app-section>
+
+<app-section-break img="/assets/images/project-code.jpg"></app-section-break>
+
+<!-- Projects section -->
+<app-section-header title="Projects" id="projects"></app-section-header>
+<app-section id="projects-section">
+
+</app-section>

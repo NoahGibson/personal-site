@@ -1,0 +1,18 @@
+<div id="footer-container">
+  <ul id="footer-options">
+    <a *ngFor="let link of footOptions"
+       href="{{ link.linkId | getString:'link' }}
+       "target="_blank">
+      <li [ngClass]="{'hovered': hovered}">
+        <mat-icon svgIcon="{{ link.icon }}"></mat-icon>
+        {{ link.label }}
+      </li>
+    </a>
+  </ul>
+  <div id="jump-option"
+       [ngClass]="{'hovered': hovered}"
+       (click)="scrollToTop()">
+    <mat-icon svgIcon="chevron-up"></mat-icon>
+    Top
+  </div>
+</div>

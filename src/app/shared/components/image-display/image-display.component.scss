@@ -1,0 +1,88 @@
+@import 'color-theme';
+
+:host {
+  position: relative;
+  cursor: pointer;
+}
+
+img {
+  margin: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+img.grayscale {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+
+img.hovered, img.clicked {
+  -webkit-box-shadow: 0 0 50px 10px rgba($dark, 0.7);
+  -moz-box-shadow: 0 0 50px 10px rgba($dark, 0.7);
+  box-shadow: 0 0 50px 10px rgba($dark, 0.7);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+$content-width: 300px;
+
+#content-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#content {
+  margin-left: 10px;
+  background-color: $white;
+  padding: 10px;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-box-shadow: 0 0 50px 10px rgba($dark, 0.7);
+  -moz-box-shadow: 0 0 50px 10px rgba($dark, 0.7);
+  box-shadow: 0 0 50px 10px rgba($dark, 0.7);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+
+  #header {
+    font-size: 1.5em;
+    margin: 10px 0 10px 5px;
+    width: $content-width;
+  }
+
+  #body {
+    margin-left: 5px;
+    width: $content-width;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+  }
+
+  #body.clicked {
+    height: 200px;
+  }
+
+}
+
+#content.hovered, #content.clicked {
+  opacity: 1;
+  width: $content-width;
+}

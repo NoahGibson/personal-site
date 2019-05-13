@@ -1,0 +1,14 @@
+<img [src]="img"
+     [ngClass]="{'grayscale': grayscale, 'clicked': clicked, 'hovered': hovered}"
+     class="image-display" />
+<div id="content-container">
+  <div id="content" [ngClass]="{'hovered': hovered, 'clicked': clicked}">
+    <div id="header">
+      <h3>{{ title }}</h3>
+    </div>
+    <div id="body" [ngClass]="{'clicked': clicked}">
+      {{ caption }}
+    </div>
+  </div>
+</div>
+

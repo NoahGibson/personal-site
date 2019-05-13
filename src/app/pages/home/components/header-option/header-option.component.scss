@@ -1,0 +1,30 @@
+@import 'color-theme';
+
+.header-option-wrapper {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin: 0;
+  background-image: linear-gradient(60deg, $light-secondary, $light);
+  -webkit-box-shadow: 0 0 50px 10px rgba($white, 0.7), inset 0 0 2px 5px white;
+  -moz-box-shadow: 0 0 50px 10px rgba($white, 0.7), inset 0 0 2px 5px white;
+  box-shadow: 0 0 50px 10px rgba($white, 0.7), inset 0 0 2px 5px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header-option-wrapper:hover, .header-option-wrapper:focus {
+  -webkit-box-shadow: 0 0 50px 30px rgba($white, 0.7), inset 0 0 2px 7px white;
+  -moz-box-shadow: 0 0 50px 30px rgba($white, 0.7), inset 0 0 2px 7px white;
+  box-shadow: 0 0 50px 30px rgba($white, 0.7), inset 0 0 2px 7px white;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}

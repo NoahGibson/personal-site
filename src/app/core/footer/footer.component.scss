@@ -1,0 +1,121 @@
+@import "color-theme";
+
+:host {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#footer-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -webkit-box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  -moz-box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  height: 100%;
+  width: 130px;
+  font-size: 1em;
+  padding: 0 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+
+li:hover {
+  -webkit-box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  -moz-box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+li mat-icon {
+  margin-right: 10px;
+}
+
+li.hovered {
+  font-size: 1.15em;
+}
+
+#jump-option {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  height: 100%;
+  width: 130px;
+  font-size: 1em;
+  padding: 0 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  -moz-box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+}
+
+#jump-option:hover {
+  -webkit-box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  -moz-box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  box-shadow: 0 0 10px 5px rgba($dark, 0.7), inset 0 0 2px 10px white;
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+#jump-option mat-icon {
+  margin-right: 10px;
+}
+
+#jump-option.hovered {
+  font-size: 1.15em;
+}
